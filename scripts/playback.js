@@ -33,7 +33,7 @@ function loadInstrumentSample(instrumentName, url) {
     .catch(e => console.error(e));
 }
 
-//https://freesound.org/people/telemann67/sounds/261288/
+//https://www.vibrationdata.com/piano.htm
 loadInstrumentSample('piano', 'instruments/Piano.mp3');
 //https://freesound.org/people/MTG/sounds/247409/
 loadInstrumentSample('violin', 'instruments/Violin.mp3');
