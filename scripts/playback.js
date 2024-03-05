@@ -33,8 +33,8 @@ function loadInstrumentSample(instrumentName, url) {
     .catch(e => console.error(e));
 }
 
-//https://www.vibrationdata.com/piano.htm
-loadInstrumentSample('piano', 'instruments/Piano.mp3');
+//https://freesound.org/people/Teddy_Frost/sounds/334534/
+loadInstrumentSample('piano', 'instruments/Piano.wav');
 //https://freesound.org/people/MTG/sounds/247409/
 loadInstrumentSample('violin', 'instruments/Violin.mp3');
 //https://freesound.org/people/MTG/sounds/247098/
