@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PitchMix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="snap-section"></section>
+    <header>
+        <img src="images/Logo.svg" class="logo" />
+    </header>
+
+    <div class="siteContainer">
+        <div class="DAWcontainer">
+            <div class="topDAWsection">
+            <div class="instruments">
+                <div class="MusicSection" id="piano">
+                    <div class="instrumentBox" style="background-color: rgb(15, 14, 14); border: 0.1rem solid red;">
+                        <div class="instrumentName">Piano</div>
+                        <div class="volumeControl">
+                            <div class="volumeLabel">Volume</div>
+                            <input type="number" class="instrumentVolumeInput" value="100" min="0" placeholder="Volume" style="border-bottom: solid red">
+                        </div>
+                    </div>
+                </div>
+                <div class="MusicSection" id="violin">
+                <div class="instrumentBox" style="background-color: rgb(15, 14, 14); border: 0.1rem solid rgb(2, 205, 2);">
+                    <div class="instrumentName">Violin</div>
+                    <div class="volumeControl">
+                        <div class="volumeLabel">Volume</div>
+                        <input type="number" class="instrumentVolumeInput" value="100" min="0" placeholder="Volume" style="border-bottom: solid rgb(2, 205, 2);">
+                    </div>
+                </div>
+                </div>
+                <div class="MusicSection" id="bass">
+                    <div class="instrumentBox" style="background-color: rgb(15, 14, 14); border: 0.1rem solid rgb(168, 20, 236);">
+                        <div class="instrumentName">Bass</div>
+                        <div class="volumeControl">
+                            <div class="volumeLabel">Volume</div>
+                            <input type="number" class="instrumentVolumeInput" value="100" min="0" placeholder="Volume" style="border-bottom: rgb(168, 20, 236) solid;">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="MusicSection" id="guitar">
+                        <div class="instrumentBox" style="background-color: rgb(15, 14, 14); border: 0.1rem solid rgb(10, 125, 240);">
+                            <div class="instrumentName">Guitar</div>
+                            <div class="volumeControl">
+                                <div class="volumeLabel">Volume</div>
+                                <input type="number" class="instrumentVolumeInput" value="100" min="0" placeholder="Volume" style="border-bottom: rgb(10, 125, 240) solid;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MusicSection" id="trumpet">
+                        <div class="instrumentBox" style="background-color: rgb(15, 14, 14); border: 0.1rem solid rgb(255, 230, 6); position: relative;">
+                            <div class="instrumentName">Trumpet</div>
+                            <div class="volumeControl">
+                                <div class="volumeLabel">Volume</div>
+                                <input type="number" class="instrumentVolumeInput" value="100" min="0" placeholder="Volume"  style="border-bottom: solid rgb(255, 230, 6);">
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <div class="drumButton">
+                <img class="drumImage" src="images/drum.svg">
+            </div>
+            <div class="instructions">
+                <img src="images/placeholder.png" class="instructionImage">
+                <div class="instructionTitle"></div>
+                <div class="bottomInstruction">
+                    <div class="instructionArrow left"><</div>
+                    <div class="instructionText"></div>
+                    <div class="instructionArrow right">></div>
+                </div>
+            </div>   
+        </div>
+        <div class="playback">
+            <div class="settingsInput">
+                <div class="input-container" id="musicName" >
+                    <label class="inputLabel" for="musicNameInput">Project Name</label>
+                    <input type="text" id="musicNameInput" value="Project" placeholder="Enter Music Name">
+                </div>
+                <div class="numberInputs">
+
+            <div class="input-container">
+                <label class="inputLabel" for="volumeInput">Volume</label>
+                <input type="number" id="volumeInput" placeholder="Volume" min="0" value="400">
+            </div>
+            
+            <div class="input-container">
+                <label class="inputLabel" for="bpmInput">BPM</label>
+                <input type="number" id="bpmInput" placeholder="BPM" min="20" max="500" value="120">
+            </div>
+        </div>  
+
+            </div>
+            <button id="stopButton">
+                <img src="images/pause.svg" alt="Stop" class="buttonIcon">
+            </button>
+            <button id="playButton">
+                <img src="images/play.svg" alt="Play" class="buttonIcon">
+            </button>
+            
+            <div class="file-management-container">
+                <button id="importButton">
+                    Import
+                </button>
+                <input type="file" id="fileInput" style="display: none;" accept=".json">
+                <button id="exportButton">
+                    Export
+                </button>
+                <button id="newProject">
+                    New Project
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+    <section class="snap-section"></section>
+
+    <footer>
+        Igor Martic
+        <br />
+        David Tanaskovic
+    </footer>
+
+    <script src="scripts/playback.js"></script>
+    <script src="scripts/midiScript.js"></script>
+    <script src="scripts/settings.js"></script>
+    <script src="scripts/instruction.js"></script>
+    <script src="scripts/drumkit.js"></script>
+</body>
+</html>
